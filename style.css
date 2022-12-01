@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --background-color: #ece6c2;
+  --font-color: #49776a;
+  --second-font-color: #d2a24c;
+  --box-color: #6d5643;
+  --hover-color: #cc6b49;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: var(--background-color);
+  color: var(--font-color);
+}
+/* Layout Style */
+header {
+  height: 35vh;
+  position: relative;
+  border-bottom: 7px solid var(--box-color);
+}
+
+main {
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.left {
+  width: 52rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.right {
+  width: 52rem;
+  font-size: 2rem;
+}
+/* Elements Style */
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+
+.number{
+  background-color: var(--box-color);
+  color: var(--second-font-color);
+  font-size: 6rem;
+  width: 15rem;
+  padding: 3rem 0;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%,50%);
+}
+
+.between {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 2rem;
+  right: 2rem;
+}
+
+.again {
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+}
+
+.guess {
+  background-color: transparent;
+  border: 4px solid var(--box-color);
+  border-radius: 4px;
+  font-family: inherit;
+  color: inherit;
+  font-size: 5rem;
+  text-align: center;
+  padding: 2.5rem;
+  width: 25rem;
+  margin-bottom: 3rem;
+}
+
+.guess:focus {
+  outline: none;
+}
+
+.btn {
+  border: none;
+  background-color: var(--box-color);
+  color: var(--second-font-color);
+  font-family: inherit;
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.7s ease;
+}
+
+.btn:hover {
+  /* background-color: var(--hover-color); */
+  color: #eee;
+}
+
+.message {
+  margin-bottom: 8rem;
+  height: 3rem;
+}
+
+.label-score {
+  margin-bottom: 3rem;
+}
+
+
